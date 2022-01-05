@@ -8,6 +8,12 @@
     "start": "node dist/index.js",
     "dev": "nodemon dist/index.js"
   },
+  "mikro-orm": {
+    "useTsNode": true,
+    "configPaths": [
+      "./src/mikro-orm.config.ts"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/brendapc/GraphQL-fullstack-project.git"
@@ -29,6 +35,7 @@
     "@mikro-orm/core": "^4.5.10",
     "@mikro-orm/migrations": "^4.5.10",
     "@mikro-orm/postgresql": "^4.5.10",
-    "pg": "^8.7.1"
+    "pg": "^8.7.1",
+    "ts-node": "^10.4.0"
   }
 }
